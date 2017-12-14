@@ -1,0 +1,8 @@
+version: '2'
+services:
+  nginx:
+    image: library/nginx:1.13-alpine
+  nginx-lb:
+    image: rancher/lb-service-haproxy
+    ports:
+      - ${lb_port}
