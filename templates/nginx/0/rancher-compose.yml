@@ -26,7 +26,7 @@ services:
     lb_config:
       certs: []
       port_rules:
-      - protocol: tcp
+      - protocol: http
         service: nginx
         source_port: ${lb_port}
         target_port: 80

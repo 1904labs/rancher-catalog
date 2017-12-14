@@ -3,6 +3,6 @@ services:
   nginx:
     image: library/nginx:1.13-alpine
   nginx-lb:
-    image: rancher/lb-service-haproxy
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
       - ${lb_port}
